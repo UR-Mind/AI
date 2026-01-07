@@ -1,0 +1,270 @@
+# AI Chatbot 资源页面
+以下是根据您的要求生成的包含国内外主流AI聊天机器人链接和简介的HTML页面代码。该页面设计为浏览器启动页，包含所有主流AI Chatbot的官方链接和简要介绍。
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot 资源中心</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .description {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        
+        .category {
+            margin-bottom: 40px;
+        }
+        
+        .category-title {
+            font-size: 1.8em;
+            color: #4a5568;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .chatbot-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .chatbot-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #667eea;
+        }
+        
+        .chatbot-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .chatbot-name {
+            font-size: 1.3em;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+        
+        .chatbot-company {
+            color: #718096;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        
+        .chatbot-description {
+            color: #4a5568;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .chatbot-link {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .chatbot-link:hover {
+            background: #5a67d8;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #718096;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            .chatbot-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Chatbot 资源中心</h1>
+            <p class="description">国内外主流AI聊天机器人官方链接与功能简介</p>
+        </header>
+        
+        <div class="category">
+            <h2 class="category-title">国内AI聊天机器人</h2>
+            <div class="chatbot-grid">
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">豆包</h3>
+                    <p class="chatbot-company">字节跳动</p>
+                    <p class="chatbot-description">字节跳动推出的AI聊天助手，基于自研大模型，支持多轮对话、内容创作和知识问答。</p>
+                    <a href="https://www.doubao.com/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">文心一言</h3>
+                    <p class="chatbot-company">百度</p>
+                    <p class="chatbot-description">百度研发的知识增强大语言模型，具备对话交互、内容创作、知识推理等多模态能力。</p>
+                    <a href="https://yiyan.baidu.com/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">通义千问</h3>
+                    <p class="chatbot-company">阿里巴巴</p>
+                    <p class="chatbot-description">阿里云推出的大语言模型，支持多轮对话、逻辑推理、知识问答和内容生成。</p>
+                    <a href="https://tongyi.aliyun.com/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">讯飞星火</h3>
+                    <p class="chatbot-company">科大讯飞</p>
+                    <p class="chatbot-description">科大讯飞推出的认知大模型，具备语言理解、知识问答、逻辑推理等多项能力。</p>
+                    <a href="https://xinghuo.xfyun.cn/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">智谱ChatGLM</h3>
+                    <p class="chatbot-company">清华大学 & 智谱AI</p>
+                    <p class="chatbot-description">开源双语对话语言模型，支持中英文对话，具备知识问答和内容生成能力。</p>
+                    <a href="https://chatglm.cn/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">360智脑</h3>
+                    <p class="chatbot-company">360公司</p>
+                    <p class="chatbot-description">360公司研发的大语言模型，聚焦安全领域的AI应用，具备多轮对话和知识推理能力。</p>
+                    <a href="https://ai.360.cn/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">秘塔AI</h3>
+                    <p class="chatbot-company">秘塔科技</p>
+                    <p class="chatbot-description">专注于搜索技术的AI助手，提供精准的信息检索和内容生成服务，支持多语言处理。</p>
+                    <a href="https://metaso.cn/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="category">
+            <h2 class="category-title">国外AI聊天机器人</h2>
+            <div class="chatbot-grid">
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">ChatGPT</h3>
+                    <p class="chatbot-company">OpenAI</p>
+                    <p class="chatbot-description">OpenAI开发的大型语言模型，支持自然对话、内容创作、代码生成等多种任务。</p>
+                    <a href="https://chat.openai.com/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">Claude</h3>
+                    <p class="chatbot-company">Anthropic</p>
+                    <p class="chatbot-description">Anthropic开发的AI助手，专注于安全、有帮助的对话体验，支持长文本处理。</p>
+                    <a href="https://claude.ai/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">Bard (Gemini)</h3>
+                    <p class="chatbot-company">Google</p>
+                    <p class="chatbot-description">Google开发的对话式AI助手，集成Google搜索能力，提供准确的信息和创意内容。</p>
+                    <a href="https://gemini.google.com/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">Copilot</h3>
+                    <p class="chatbot-company">Microsoft</p>
+                    <p class="chatbot-description">微软基于OpenAI技术开发的AI助手，集成在Windows、Office等产品中。</p>
+                    <a href="https://copilot.microsoft.com/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">Groq</h3>
+                    <p class="chatbot-company">Groq Inc.</p>
+                    <p class="chatbot-description">专注于高速推理的AI平台，提供极低延迟的AI对话体验，支持多种开源模型。</p>
+                    <a href="https://groq.com/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">Perplexity</h3>
+                    <p class="chatbot-company">Perplexity AI</p>
+                    <p class="chatbot-description">AI驱动的答案引擎，提供准确、有引用的回答，专注于事实准确性。</p>
+                    <a href="https://www.perplexity.ai/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+                
+                <div class="chatbot-card">
+                    <h3 class="chatbot-name">HuggingChat</h3>
+                    <p class="chatbot-company">Hugging Face</p>
+                    <p class="chatbot-description">开源社区驱动的AI聊天助手，支持多种开源模型，为开发者提供AI交互体验。</p>
+                    <a href="https://huggingface.co/chat/" class="chatbot-link" target="_blank">访问官网</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2026 AI Chatbot 资源中心 | 最后更新: 2026-01-07</p>
+        </footer>
+    </div>
+</body>
+</html>
+## 页面功能特点
+**响应式设计**：页面采用响应式布局，可在桌面和移动设备上正常显示
+**分类清晰**：将AI聊天机器人分为国内和国外两大类别，便于用户查找
+**卡片式布局**：每个AI聊天机器人采用独立的卡片设计，包含名称、开发公司、功能简介和官方链接
+**视觉美观**：使用渐变背景和卡片阴影效果，提供现代化的视觉体验
+**交互友好**：链接按钮具有悬停效果，卡片具有悬停动画，提升用户体验
+## 使用说明
+1. 将上述代码复制到文本编辑器中
+2. 保存为`.html`格式文件（如`ai_chatbot.html`）
+3. 在浏览器中打开该文件即可查看
+4. 可设置为浏览器启动页或书签使用
+该页面包含了您要求的**豆包**和**秘塔**AI聊天机器人，以及国内外其他主流AI聊天助手，每个都提供了官方链接和功能简介。
